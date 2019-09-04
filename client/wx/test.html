@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+</body>
+
+<script>
+    var persons = [{
+            id: 1,
+            name: "小刚",
+            age: 18
+        },
+        {
+            id: 2,
+            name: "小明",
+            age: 17
+        },
+        {
+            id: 3,
+            name: "小刚",
+            age: 18
+        },
+        {
+            id: 4,
+            name: "小明",
+            age: 17
+        },
+        {
+            id: 5,
+            name: "小刚",
+            age: 18
+        },
+        {
+            id: 6,
+            name: "小明",
+            age: 17
+        },
+        {
+            id: 7,
+            name: "小刚",
+            age: 18
+        }
+    ];
+
+
+    class PersonNode {
+        constructor(arrays) {
+            let that = this;
+            this.arrays = arrays;
+            //创建table
+            this.table = document.createElement('table');
+            //设置边界
+            this.table.setAttribute('border', '1px');
+            //遍历数组
+            arrays.forEach(function (person) {
+                //创建一给tr
+                let tr = document.createElement('tr');
+                //设置id属性
+                tr.setAttribute('id', `person${person.id}`);
+                //设置节点内容
+                tr.innerHTML =
+                    `<td>${person.id}</td><td>${person.name}</td><td>${person.age}</td><td><button onclick=${that.removeTr}>删除</button></td>`
+                //把tr添加到table
+                that.table.append(tr);
+            });
+        }
+
+        removeTr(id) {
+            //设置id
+            let trId = 'person' + id;
+            //根据id获得tr
+            let tr = document.getElementById(trId);
+            //删除当前的tr
+            tr.remove();
+        }
+        start(id) {
+            //获得显示的盒子
+            let box = document.getElementById(id);
+            //把显示的内容添加到显示的盒子里面
+            box.append(this.table);
+
+        }
+    }
+    //创建一个对象
+    let personNode = new PersonNode(persons);
+    personNode.start('box');
+</script>
+
+</html>
