@@ -8,10 +8,15 @@
     "pages/user/user"
 
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "万达影城",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
