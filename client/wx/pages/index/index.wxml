@@ -1,3 +1,69 @@
 <!--index.wxml-->
+<view class="container">
+  <view class="background">
+    <view class="header">
+      <!-- 头部标题栏 -->
+      <view>
+        <image src="../../imgs/icon.png" class="icon"></image>
+      </view>
+      <view class="title">万达影城(锦华路万达店)</view>
+    </view>
+    <!-- 地址电话栏 -->
+    <view class="message">
+      <view class="location" bindtap='locationMap'>
+        <view class="between">
+          <image src="../../imgs/location.png" class="location-icon"></image>
+        </view>
+        <view>锦华路一段68号万达广场3楼365号 1.86km</view>
+      </view>
+      <view class="location">
+        <view class="between">
+          <image src="../../imgs/clock.png" class="location-icon"></image>
+        </view>
+        <view>08:30-03:00</view>
+      </view>
+      <view class="location" bindtap="phoneCall">
+        <view class="between">
+          <image src="../../imgs/call.png" class="location-icon"></image>
+        </view>
+        <view>400-080-6060</view>
+      </view>
+    </view>
+    <!-- 购买栏 -->
+    <view class="ticket">
+      <view class="ticketBox-1" bindtap="toMovieView">
+        <view class="ticket-left">
+          <view>
+            <image src="../../imgs/ticket.png" class="ticket-icon"></image>
+          </view>
+          <view>购票</view>
+        </view>
+        <view class="ticket-right">
+          <view>享优惠</view>
+          <view>
+            <image src="../../imgs/right.png" class="right-icon"></image>
+          </view>
+        </view>
+      </view>
+      <view class="ticketBox-2" bindtap="toSellView">
+        <view class="ticket-left">
+          <view>卖品</view>
+        </view>
 
 
+      </view>
+    </view>
+    <!-- 门店图片展示栏 -->
+    <view class="picture">
+      <view>门店图片</view>
+      <view class="pictureBox">
+        <image src="../../imgs/1.jpg" class="first"></image>
+        <image src="../../imgs/2.jpg" class="first"></image>
+        <image src="../../imgs/3.jpg" class="first"></image>
+        <image src="../../imgs/4.jpg" class="first"></image>
+        <image src="../../imgs/5.jpg" class="first"></image>
+        <image src="../../imgs/6.jpg" class="first"></image>
+      </view>
+    </view>
+  </view>
+</view>

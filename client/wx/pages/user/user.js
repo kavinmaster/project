@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  clickLogin:function(){
+      wx.navigateTo({
+        url: '../login/login',
+      })
   }
 })

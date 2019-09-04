@@ -1,2 +1,39 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="Box">
+  <view class="headBox" bindtap="clickLogin">
+    <image src="../../imgs/user.png" class="userimg01"></image>
+    <view class="userhead">
+      <view class="userlogin">去登录</view>
+      <image src="../../imgs/02.png" class="userimg02"></image>
+    </view>
+  </view>
+  <view class="contentBox">
+    <view class="contentItem"  bindtap="clickLogin">
+      <image src="../../imgs/video.png" class="video"></image>
+      <view class="contentR">
+        <view class="contentText">影票订单</view>
+        <image src="../../imgs/03.png" class="userimg03"></image>
+      </view>
+    </view>
+    <view class="contentItem"  bindtap="clickLogin">
+      <image src="../../imgs/gift.png" class="video"></image>
+      <view class="contentR">
+        <view class="contentText">卖品订单</view>
+        <image src="../../imgs/03.png" class="userimg03"></image>
+      </view>
+    </view>
+    <view class="contentItem"  bindtap="clickLogin">
+      <image src="../../imgs/ying.png" class="video"></image>
+      <view class="contentR">
+        <view class="contentText">我的影单</view>
+        <image src="../../imgs/03.png" class="userimg03"></image>
+      </view>
+    </view>
+    <view class="contentItem"  bindtap="clickLogin">
+      <image src="../../imgs/wallet.png" class="video"></image>
+      <view class="contentR">
+        <view class="contentText">我的钱包</view>
+        <image src="../../imgs/03.png" class="userimg03"></image>
+      </view>
+    </view>
+  </view>
+</view>

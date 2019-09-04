@@ -1,1 +1,63 @@
-/* pages/user/user.wxss */
+.Box{
+  width: 100%;
+  height: 1200rpx;
+  background-color: #F3F4F6;
+}
+.headBox{
+  width: 100%;
+  height: 270rpx;
+  background-color: #e9a039;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userimg01{
+  width: 100rpx;
+  height: 100rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+}
+.userhead{
+  display: flex;
+  flex-direction: row;
+}
+.userlogin{
+  color: #FFFFFF;
+  font-size: 35rpx;
+}
+.userimg02{
+  width: 50rpx;
+  height: 50rpx;
+}
+.contentBox{
+  margin-top: 20rpx;
+}
+.contentItem{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin-bottom: 5rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.video{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 50rpx;
+}
+.contentR{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.contentText{
+  font-size: 30rpx;
+}
+.userimg03{
+  width: 50rpx;
+  height: 50rpx;
+}
