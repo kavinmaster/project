@@ -49,7 +49,6 @@
 </view> 
 
 <view class="_blank"></view>
-
 <view class="introduction left">
   <view class="user-motto  {{isFold?'hide':'show'}}">
     <text> 一个是美国外交安全局的忠诚特工、身材魁梧的执法者霍布斯（道恩▪强森饰），一个是前英国军事特工
