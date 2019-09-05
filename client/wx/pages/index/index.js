@@ -30,7 +30,7 @@ Page({
     })
   },
   toSellView: function () {
-    wx.switchTab({
+    wx.navigateTo({
       url: '../sell/sell',
     })
   }
