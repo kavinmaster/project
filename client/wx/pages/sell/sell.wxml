@@ -18,7 +18,7 @@
         <view class="boximg"><image src="../../imgs/ice.png"></image></view>
         <view class="boxdesc">
             <view class="descTitle">哈根达斯</view>
-            <view class="description">哈根达斯小杯装 100ml×1</view> 
+            <view class="description">哈根达斯小杯装100ml×1</view> 
             <view class="descbottom">
               <view>￥45</view>
               <view class="add"><image src="../../imgs/icon_add.png"></image></view>
