@@ -6,7 +6,39 @@ Page({
    */
   data: {
     windowHeight: null,
-    index:0,
+    Selectindex:0,
+    items: [{
+      id: 0,
+      title: '冰淇淋',
+    },
+      {
+        id: 1,
+        title: '正版电影周边',
+      },
+      {
+        id: 2,
+        title: '特惠套餐',
+      },
+      {
+        id: 3,
+        title: '爆米花',
+      },
+      {
+        id: 4,
+        title: '碳酸饮料',
+      },
+      {
+        id: 5,
+        title: '瓶装饮料',
+      },
+      {
+        id: 6,
+        title: '现调饮料',
+      },
+      {
+        id: 7,
+        title: 'COSTA咖啡',
+      }]
   },
 
   /**
@@ -17,7 +49,7 @@ Page({
     wx.getSystemInfo({
       success: function (res) {
         let windowHeight = (res.windowHeight * (750 / res.windowWidth)) - 100+ 'rpx';
-
+        console.log(windowHeight);
         that.setData({
           windowHeight: windowHeight
         });
@@ -26,14 +58,9 @@ Page({
   },
 
   onclickTop: function (res) {
-    let id = res.currentTarget.dataset.change;
-    console.log(id);
+    let index = res.currentTarget.dataset.change;
     this.setData({
-      index: id
+      Selectindex: index
     });
-  },
-  
-
-  
- 
+  } 
 })
