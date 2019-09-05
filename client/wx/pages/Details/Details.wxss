@@ -2,6 +2,10 @@
   height: 160rpx;
 }
 
+.box{
+  height: 1100rpx;
+}
+
 .posi{
    position: absolute;
    width: 683rpx;
@@ -144,13 +148,6 @@
 .show{
  display: block;
 }
-.arrow{
- position: absolute;
- width: 30rpx;
- height: 33rpx;
- left: 50%;
- transform: translate(-50%);
-}
 
 .introduction{
   font-size: 32rpx;
@@ -176,7 +173,7 @@
 
 .actorBox {
   width: 726rpx;
-  height: 270rpx;
+  height: 300rpx;
   white-space: nowrap;
 }
 
@@ -208,7 +205,8 @@
 }
 
 ._stills{
-  margin-top: 20rpx;
+  font-size: 35rpx;
+  margin-top: 30rpx;
 }
 
 .buy{
@@ -218,4 +216,21 @@
   font-size: 32rpx;
   line-height: 80rpx;
   background: #EBBE7D;
+}
+
+.playName{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  height: 40rpx;
+}
+.plays{
+  font-size: 25rpx;
+  color: #808080;
+  margin-left: 10rpx;
+}
+.picture{
+  display: inline-block;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 10rpx;
 }
