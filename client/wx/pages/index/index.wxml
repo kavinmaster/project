@@ -6,7 +6,7 @@
       <view>
         <image src="../../imgs/icon.png" class="icon"></image>
       </view>
-      <view class="title">万达影城(锦华路万达店)</view>
+      <view class="title">万达影城（锦华路万达店)</view>
     </view>
     <!-- 地址电话栏 -->
     <view class="message">
