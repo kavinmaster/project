@@ -2,18 +2,18 @@
 <view class="sellView">
  <view class="sellTop" style='height: {{windowHeight}};' >
    <view class="topLeft" >
-    <view class="sider"  ><view>冰淇淋</view></view>
-     <view class="sider"><view>正版电影周边</view></view>
-     <view class="sider"><view>特惠套餐</view></view>
-     <view  class="sider"><view>爆米花</view></view>
-     <view  class="sider"><view>碳酸饮料</view></view>
-     <view class="sider"><view>瓶装饮料</view></view>
-     <view class="sider"><view>现调饮料</view></view>
-     <view class="sider"><view>COSTA咖啡</view></view>
+    <view class="sider" bindtap="onclickTop" data-change="0"><view>冰淇淋</view></view>
+     <view class="sider" bindtap="onclickTop" data-change="1"><view>正版电影周边</view></view>
+     <view class="sider" bindtap="onclickTop" data-change="2"><view>特惠套餐</view></view>
+     <view  class="sider" bindtap="onclickTop" data-change="3"><view>爆米花</view></view>
+     <view  class="sider" bindtap="onclickTop" data-change="4"><view>碳酸饮料</view></view>
+     <view class="sider" bindtap="onclickTop" data-change="5"><view>瓶装饮料</view></view>
+     <view class="sider" bindtap="onclickTop" data-change="6"><view>现调饮料</view></view>
+     <view class="sider" bindtap="onclickTop" data-change="7"><view>COSTA咖啡</view></view>
    </view>
-   <view class="topRight">
+
+   <view class="topRight" wx:if="{{index==0}}">
      <view class="rightBox">
-       <view class="boxTitle">冰淇淋</view>
        <view class="boxinfor">
         <view class="boximg"><image src="../../imgs/ice.png"></image></view>
         <view class="boxdesc">
@@ -27,6 +27,289 @@
        </view>
      </view>
    </view>
+
+    <view class="topRight" wx:if="{{index==1}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/du.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">G魔兽杜隆坦</view>
+            <view class="description">魔兽杜隆坦18寸×1</view> 
+            <view class="descbottom">
+              <view>￥259</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/ameng.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">哆啦A梦背包</view>
+            <view class="description">哆啦A梦14寸立体儿童背包EVA款×1</view> 
+            <view class="descbottom">
+              <view>￥179</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/pei.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">G小猪佩奇录音系列佩奇毛绒</view>
+            <view class="description">小猪佩奇录音系列玩偶佩奇cm×1</view> 
+            <view class="descbottom">
+              <view>￥45</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
+   <view class="topRight" wx:if="{{index==2}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/tao.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">开学季套餐A</view>
+            <view class="description">现调冰吸22oz无包材×1+爆米花盒装850oz×1</view> 
+            <view class="descbottom">
+              <view>￥79</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/tao.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">开学季套餐B</view>
+            <view class="description">现调冰吸22oz无包材×1+爆米花盒装850oz×1</view> 
+            <view class="descbottom">
+              <view>69</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/tao.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">开学季套餐C</view>
+            <view class="description">现调冰吸22oz无包材×1+爆米花盒装850oz×1</view> 
+            <view class="descbottom">
+              <view>￥59</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
+   <view class="topRight" wx:if="{{index==3}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shu.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">爆米花大</view>
+            <view class="description">爆米花大×1</view> 
+            <view class="descbottom">
+              <view>￥35</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shu.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">爆米花中</view>
+            <view class="description">爆米花中×1</view> 
+            <view class="descbottom">
+              <view>￥30</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shu.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">空心薯大</view>
+            <view class="description">空心薯大×1</view> 
+            <view class="descbottom">
+              <view>￥35</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+      <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shu.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">空心薯中</view>
+            <view class="description">空心薯中×1</view> 
+            <view class="descbottom">
+              <view>￥30</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
+   <view class="topRight" wx:if="{{index==4}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/coke.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">可乐大</view>
+            <view class="description">可乐大×1</view> 
+            <view class="descbottom">
+              <view>￥18</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/coke.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">可乐中</view>
+            <view class="description">可乐中×1</view> 
+            <view class="descbottom">
+              <view>￥15</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/coke.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">冰吸大</view>
+            <view class="description">冰吸大×1</view> 
+            <view class="descbottom">
+              <view>￥16</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
+   <view class="topRight" wx:if="{{index==5}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shui.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">依云大</view>
+            <view class="description">依云大×1</view> 
+            <view class="descbottom">
+              <view>￥18</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shui.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">果倍爽</view>
+            <view class="description">果倍爽×1</view> 
+            <view class="descbottom">
+              <view>￥12</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/shui.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">5100冰川矿泉水</view>
+            <view class="description">5100冰川矿泉水×1</view> 
+            <view class="descbottom">
+              <view>￥45</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
+   <view class="topRight" wx:if="{{index==6}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/zhi.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">G愤怒的小鸟LED底座双杯</view>
+            <view class="description">现调可乐22oz无包材×1</view> 
+            <view class="descbottom">
+              <view>￥45</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/zhi.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">热汇源果汁16oz</view>
+            <view class="description">汇源复合蔬果汁双层热饮杯16oz×1</view> 
+            <view class="descbottom">
+              <view>￥15</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
+
+   <view class="topRight" wx:if="{{index==7}}">
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/cafei.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">APP马卡龙</view>
+            <view class="description">臻致马卡龙×1</view> 
+            <view class="descbottom">
+              <view>￥32</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+     <view class="rightBox">
+       <view class="boxinfor">
+        <view class="boximg"><image src="../../imgs/cafei.png"></image></view>
+        <view class="boxdesc">
+            <view class="descTitle">拿铁_中</view>
+            <view class="description">拿铁_中全脂×1</view> 
+            <view class="descbottom">
+              <view>￥31</view>
+              <view class="add"><image src="../../imgs/icon_add.png"></image></view>
+            </view>
+        </view>
+       </view>
+     </view>
+   </view>
+
  </view>
  <view class="sellBottom">
   <view class="bottomLeft">

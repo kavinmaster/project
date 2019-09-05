@@ -25,12 +25,12 @@ Page({
     })
   },
   toMovieView:function(){
-    wx.navigateTo({
-      url: '../movie/movie',
+    wx.switchTab({
+      url: '../movies/movies',
     })
   },
   toSellView: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../sell/sell',
     })
   }

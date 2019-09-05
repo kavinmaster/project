@@ -30,11 +30,7 @@
   align-items: center;
   width: 650rpx;
 }
-.boxTitle{
-  font-size: 32rpx;
-  height: 30rpx;
-  margin: 0 auto;
-}
+
 .boxinfor{
   width: 650rpx;
   display: flex;
@@ -86,7 +82,6 @@
 
 .sellBottom{
   width: 750rpx;
-  margin-bottom: 100rpx;
   box-shadow: 0rpx 2rpx 10rpx #BDBDBD;
   position: absolute;
   bottom: 0rpx;

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     windowHeight: null,
-    index:0
+    index:0,
   },
 
   /**
@@ -16,7 +16,7 @@ Page({
     let that = this;
     wx.getSystemInfo({
       success: function (res) {
-        let windowHeight = (res.windowHeight * (750 / res.windowWidth)) - 200+ 'rpx';
+        let windowHeight = (res.windowHeight * (750 / res.windowWidth)) - 100+ 'rpx';
 
         that.setData({
           windowHeight: windowHeight
@@ -31,6 +31,9 @@ Page({
     this.setData({
       index: id
     });
-  }
+  },
+  
+
+  
  
 })

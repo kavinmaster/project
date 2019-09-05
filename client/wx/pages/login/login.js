@@ -1,4 +1,4 @@
-// pages/movie/movie.js
+// pages/login/login.js
 Page({
 
   /**

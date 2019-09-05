@@ -1,18 +1,45 @@
 {
   "pages": [
+   
     "pages/index/index",
     "pages/sell/sell",
     "pages/logs/logs",
-    "pages/movie/movie",
-    "pages/movieInfo/movieInfo",
-    "pages/user/user"
+    "pages/movies/movies",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/movieInfo/movieInfo"
+    
 
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "成都锦华万达广场店",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#737a82",
+    "selectedColor": "#d8b37e",
+    "list": [
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "imgs/icon_movie.png",
+        "selectedIconPath": "imgs/icon_movie_select.png"
+      },
+      {
+        "pagePath": "pages/sell/sell",
+        "text": "卖品",
+        "iconPath": "imgs/icon_sell.png",
+        "selectedIconPath": "imgs/icon_sell_select.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/imgs/icon_user.png",
+        "selectedIconPath": "imgs/icon_user_select.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

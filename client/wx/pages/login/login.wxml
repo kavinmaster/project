@@ -1,0 +1,7 @@
+<view class="loginBox">
+  <image src="../../imgs/login.png" class="loginImg"></image>
+  <view class="buttonBox">
+    <button class="wxBox">微信账号快速登录</button>
+    <text class="textBox">输入手机号登录</text>
+  </view>
+</view>
