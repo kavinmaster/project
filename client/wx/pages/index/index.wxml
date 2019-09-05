@@ -53,7 +53,6 @@
 
       </view>
     </view>
-    <!-- 门店图片展示栏 -->
     <view class="picture">
       <view>门店图片</view>
       <view class="pictureBox">
