@@ -11,8 +11,8 @@ Page({
       type: 'wgs84', //返回可以用于wx.openLocation的经纬度，官方提示bug: iOS 6.3.30 type 参数不生效，只会返回 wgs84 类型的坐标信息  
       success: function (res) {
         wx.openLocation({ //​使用微信内置地图查看位置。
-          latitude: 24.345765, //要去的纬度-地址
-          longitude: 102.565315, //要去的经度-地址
+          latitude: 30.620764407065654, //要去的纬度-地址
+          longitude: 104.0968619411392, //要去的经度-地址
           name: "万达影城(锦华路万达店)",
           address: '锦华路一段68号万达广场3楼365号'
         })
