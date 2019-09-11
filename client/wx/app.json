@@ -1,12 +1,13 @@
 {
   "pages": [
-      "pages/Details/Details",
+    "pages/movies/movies",
     "pages/index/index",
     "pages/sell/sell",
     "pages/logs/logs",
-    "pages/movies/movies",
+    
     "pages/login/login",
     "pages/user/user",
+    "pages/Details/Details",
     "pages/movieInfo/movieInfo"
     
 
@@ -41,7 +42,7 @@
       {
         "pagePath": "pages/user/user",
         "text": "我的",
-        "iconPath": "/imgs/icon_user.png",
+        "iconPath": "imgs/icon_user.png",
         "selectedIconPath": "imgs/icon_user_select.png"
       }
     ]
