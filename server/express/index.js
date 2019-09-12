@@ -29,6 +29,7 @@ let port=8888;
 
 let MovieItem = require("./controllers/MovieItem");
 app.get("/movieItems", MovieItem.index);
+
 let MovieHead = require("./controllers/MovieHead");
 app.get("/HeadScorll", MovieHead.comment);
 
