@@ -6,7 +6,6 @@
     "pages/login/login",
     "pages/user/user",
     "pages/Details/Details",
-    "pages/movieInfo/movieInfo",
     "pages/sell/sell"
   ],
   "permission": {
