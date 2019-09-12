@@ -1,4 +1,5 @@
 // pages/sell/sell.js
+const app=getApp();
 Page({
 
   /**
@@ -6,39 +7,9 @@ Page({
    */
   data: {
     windowHeight: null,
-    Selectindex:0,
-    items: [{
-      id: 0,
-      title: '冰淇淋',
-    },
-      {
-        id: 1,
-        title: '正版电影周边',
-      },
-      {
-        id: 2,
-        title: '特惠套餐',
-      },
-      {
-        id: 3,
-        title: '爆米花',
-      },
-      {
-        id: 4,
-        title: '碳酸饮料',
-      },
-      {
-        id: 5,
-        title: '瓶装饮料',
-      },
-      {
-        id: 6,
-        title: '现调饮料',
-      },
-      {
-        id: 7,
-        title: 'COSTA咖啡',
-      }]
+    sells: [],
+    sellcontent:[],
+    sellsIndex: 0
   },
 
   /**
@@ -49,18 +20,45 @@ Page({
     wx.getSystemInfo({
       success: function (res) {
         let windowHeight = (res.windowHeight * (750 / res.windowWidth)) - 100+ 'rpx';
-        console.log(windowHeight);
         that.setData({
           windowHeight: windowHeight
         });
       }
     })
+    //获得后台服务的数据
+    wx.request({
+      url: 'http://localhost:8888/sell',
+      success: function (res) {
+        if (res.statusCode == 200) {
+          let sells = res.data;
+          let sellcontent=res.data;    
+          for (let i = 0; i < sells.length; i++) {
+            for (let j = 0; j < sells[i].sellcontent.length; j++) {
+              sells[i].sellcontent[j].isSwitch = false;
+            }
+          }
+          that.setData({
+             sells: sells,
+            sellcontent: sellcontent
+            });
+            app.globalData.sells=sells;
+        }
+        console.log(res)
+      }
+    })
   },
-
   onclickTop: function (res) {
-    let index = res.currentTarget.dataset.change;
+    //获得传递过来的数据
+    let id = res.currentTarget.dataset.change;
+    //把index换成id
     this.setData({
-      Selectindex: index
+      sellsIndex: id
     });
-  } 
+  },
+  toExaminationInfor: function () {
+    wx.navigateTo({
+      url: '../examinationInfor/examinationInfor',
+    })
+  },
+  
 })

@@ -5,271 +5,35 @@
 
       <view wx:for='{{imgUrls}}'>
         <swiper-item>
-          <image src='{{item}}' class="scroll"></image>
+          <image src='{{item.url}}' class="scroll"></image>
         </swiper-item>
       </view>
 
     </swiper>
   </view>
-  <view class="content">
+  <view class="content" wx:for='{{type}}'>
     <view class="item">
       <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img1.png " class="movie_img"></image>
+        <image src='{{item.url}}' class="movie_img"></image>
       </view>
-      <view class="item_font" bindtap="toDetails">
+      <view class="item_font" bindtap="{{item.id==1?'toDetails':''}}">
         <view class="movie_font1">
-          <view class="movie_title">速度与激情：特别行动
-            <image src="	https://movie-1300072979.cos.ap-chengdu.myqcloud.com/IMAX3D.png" class="IMAX3D"></image>
-          </view>
-
-        </view>
-        <view class="movie_font2">“速激”系列外传电影</view>
-        <view class="movie_font2">大卫·雷奇/道恩·强森/杰森/大...</view>
-      </view>
-      <view class="item_right">
-        <view>
-          <span class="span1">8.8</span>
-          <span class="span2">分</span>
-        </view>
-        <view class="item_purchase">购票</view>
-      </view>
-    </view>
-
-
-    <view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img2.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">哪吒之魔童降世
-            <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/IMAX3D.png" class="IMAX3D"></image>
-          </view>
-
-        </view>
-        <view class="movie_font2">IMAX首部国产动画大片</view>
-        <view class="movie_font2">饺子/吕艳婷/囧森瑟夫</view>
-      </view>
-      <view class="item_right">
-        <view>
-          <span class="span1">9.7</span>
-          <span class="span2">分</span>
-        </view>
-        <view class="item_purchase">购票</view>
-      </view>
-    </view>
-
-    <view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img3.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">烈火英雄
-            <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/IMAX3D.png" class="IMAX3D"></image>
-          </view>
-
-        </view>
-        <view class="movie_font2">英勇事迹 感动巨献</view>
-        <view class="movie_font2">陈国辉/黄晓明/杜江/欧豪</view>
-      </view>
-      <view class="item_right">
-        <view>
-          <span class="span1">9.3</span>
-          <span class="span2">分</span>
-        </view>
-        <view class="item_purchase">购票</view>
-      </view>
-    </view>
-
-
-    <view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img4.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">罗小黑战记
-
+          <view class="movie_title">{{item.title}}
+            <image src='{{item.ImaxUrl}}' class="IMAX3D"></image>
           </view>
 
         </view>
         <view class="movie_font2">
-          <span class="person">6837</span>人想看-动画/奇幻</view>
-        <view class="movie_font2">9月12日 下周四上映</view>
-      </view>
-      <view class="item_right_pre">
-        <view class="item_purchase purchase_back">预售</view>
-      </view>
-    </view>
-
-    <view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img5.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">诛仙
-            <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/IMAX3D.png" class="IMAX3D"></image>
-          </view>
-
-        </view>
-        <view class="movie_font2">《诛仙》改编 张小凡传奇人生</view>
-        <view class="movie_font2">9月13日 下周五上映</view>
-      </view>
-      <view class="item_right_pre">
-        <view class="item_purchase purchase_back">预售</view>
-      </view>
-    </view>
-
-
-    <view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img6.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">最长1枪
-
-          </view>
-
-        </view>
-        <view class="movie_font2">繁华都市中商界大佬间的权欲之争</view>
-        <view class="movie_font2">9月6日 后天上映</view>
-      </view>
-      <view class="item_right_pre">
-        <view class="item_purchase purchase_back">预售</view>
-      </view>
-    </view>
-<view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img7.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">名侦探柯南：绀青这拳
-
-          </view>
-
-        </view>
-        <view class="movie_font2">柯南第12部剧场版，真相只有一个！</view>
-        <view class="movie_font2">9月13日 下周五上映</view>
-      </view>
-      <view class="item_right_pre">
-        <view class="item_purchase purchase_back">预售</view>
-      </view>
-    </view>
-
- <view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img8.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">铤而走险
-
-          </view>
-
-        </view>
-        <view class="movie_font2"><span class="person">902</span>人喜欢-剧情/犯罪</view>
-        <view class="movie_font2">甘剑宇/大鹏/欧豪</view>
+          <span class="person">{{item.people}}</span>{{item.font1}}</view>
+        <view class="movie_font2">{{item.font2}}</view>
       </view>
       <view class="item_right">
         <view>
-          <span class="span1">8.0</span>
-          <span class="span2">分</span>
+          <span class="span1">{{item.num}}</span>
+          <span class="span2">{{item.score}}</span>
         </view>
-        <view class="item_purchase">购票</view>
+        <view class='{{item.sell=="预售"?"item_purchase purchase_back":"item_purchase"}}'>{{item.sell}}</view>
       </view>
     </view>
-
-<view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img9.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">深夜食堂
-
-          </view>
-
-        </view>
-        <view class="movie_font2">人生有百味 深夜请慢用</view>
-        <view class="movie_font2">梁家辉/魏晨</view>
-      </view>
-      <view class="item_right">
-        <view>
-          <span class="span1">8.5</span>
-          <span class="span2">分</span>
-        </view>
-        <view class="item_purchase">购票</view>
-      </view>
-    </view>
-
-
-<view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img10.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">逗爱熊仁镇
-
-          </view>
-
-        </view>
-        <view class="movie_font2"><span class="person">353</span>人想看-喜剧/爱情</view>
-        <view class="movie_font2">9月6日 后天上映</view>
-      </view>
-      <view class="item_right_pre">
-        <view class="item_purchase purchase_back">预售</view>
-      </view>
-    </view>
-<view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img11.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">使徒行者2：谍影行动
-
-          </view>
-
-        </view>
-        <view class="movie_font2">原班人马三雄回归</view>
-        <view class="movie_font2">文伟鸿/张家辉/古天乐</view>
-      </view>
-      <view class="item_right">
-        <view>
-          <span class="span1">8.9</span>
-          <span class="span2">分</span>
-        </view>
-        <view class="item_purchase">购票</view>
-      </view>
-    </view>
-
-<view class="item">
-      <view>
-        <image src="https://movie-1300072979.cos.ap-chengdu.myqcloud.com/movie_img12.png" class="movie_img"></image>
-      </view>
-      <view class="item_font">
-        <view class="movie_font1">
-          <view class="movie_title">死寂逃亡
-
-          </view>
-
-        </view>
-        <view class="movie_font2"><span class="person">2179</span>人喜欢-惊悚/恐怖</view>
-        <view class="movie_font2">约翰·R·莱昂耐迪/琪兰·席普卡/斯坦利...</view>
-      </view>
-      <view class="item_right">
-        <view>,
-          <span class="span1">7.1</span>
-          <span class="span2">分</span>
-        </view>
-        <view class="item_purchase">购票</view>
-      </view>
-    </view>
-
   </view>
 </view>

@@ -5,14 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    users: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this;
+    wx: wx.request({
+      url: 'http://localhost:8888/users',
+      success: function (res) {
+        if (res.statusCode == 200) {
+          let users = res.data;
+          that.setData({ users: users });
+        }
+      },
+    }),
+    wx.getSystemInfo({
+      success: function (res) {
+        let windowHeight = (res.windowHeight * (750 / res.windowWidth)) + 'rpx';
+        that.setData({
+          windowHeight: windowHeight
+        });
+      }
+    })
   },
 
   /**
@@ -63,9 +80,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  clickLogin:function(){
-      wx.navigateTo({
-        url: '../login/login',
-      })
+  clickLogin: function () {
+    wx.navigateTo({
+      url: '../login/login',
+    })
   }
 })

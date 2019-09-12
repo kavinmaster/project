@@ -148,6 +148,13 @@
 .show{
  display: block;
 }
+.arrow{
+ position: absolute;
+ width: 30rpx;
+ height: 33rpx;
+ left: 50%;
+ transform: translate(-50%);
+}
 
 .introduction{
   font-size: 32rpx;
@@ -173,7 +180,7 @@
 
 .actorBox {
   width: 726rpx;
-  height: 300rpx;
+  height: 290rpx;
   white-space: nowrap;
 }
 
@@ -221,12 +228,17 @@
 .playName{
   font-size: 28rpx;
   margin-left: 10rpx;
-  height: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plays{
   font-size: 25rpx;
   color: #808080;
   margin-left: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .picture{
   display: inline-block;
